@@ -1,6 +1,7 @@
 # timestamping-server-with-digicert-freetsa
 
 
+Based upon https://knowledge.digicert.com/generalinformation/INFO4231.html
 
 Let's generate the proof that file.txt was signed at a precised timestamp by DIGICERT
 
