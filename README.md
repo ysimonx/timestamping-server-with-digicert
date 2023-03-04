@@ -48,4 +48,15 @@ TSA: unspecified
 Extensions:
 ```
 
+TIMESTAMP is  Time stamp: Mar  4 15:48:59 2023 GMT
+
+
+
+Where you need it, you can verify that this response has been signed by DIGICERT for this file at this time
+
+```
+$ openssl ts -verify -in file.digicert.tsr -queryfile file.digicert.tsq -CAfile DigiCertAssuredIDRootCA.crt.pem -untrusted CHAIN.pem
+
+Verification: OK
+```
 
