@@ -3,7 +3,7 @@
 # cf python https://github.com/pyauth/tsp-client qui indique que digicert n''est pas https ...'
 echo "test" > file.txt
 openssl ts -query -data file.txt -no_nonce -sha512 -cert -out file.digicert.tsq
-curl -H "Content-Type: application/timestamp-query" --data-binary '@file.digicert.tsq'  https://timestamp.digicert.com > file.digicert.tsr
+curl -H "Content-Type: application/timestamp-query" --data-binary '@file.digicert.tsq'  http://timestamp.digicert.com > file.digicert.tsr
 
 
 
