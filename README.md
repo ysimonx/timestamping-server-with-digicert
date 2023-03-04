@@ -1,8 +1,8 @@
 # timestamping-server-with-digicert-freetsa
-timestamping-server-with-digicert-freetsa
 
 
-let's generate the proof that file.txt was signed at a precised timestamp by DIGICERT
+
+Let's generate the proof that file.txt was signed at a precised timestamp by DIGICERT
 
 generate a file.digicert.tsq file : a query, containing a SH512 of file to be sent to DIGICERT about the file.txt
 
@@ -53,6 +53,8 @@ TIMESTAMP is  Time stamp: Mar  4 15:48:59 2023 GMT
 
 
 Where you need it, you can verify that this response has been signed by DIGICERT for this file at this time
+
+note that 2 certificates from Digicert must be used ... See run.sh for more informations
 
 ```
 $ openssl ts -verify -in file.digicert.tsr -queryfile file.digicert.tsq -CAfile DigiCertAssuredIDRootCA.crt.pem -untrusted CHAIN.pem
