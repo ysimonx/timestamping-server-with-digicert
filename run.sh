@@ -25,6 +25,8 @@ sleep
 
 echo "downloading digicert's public certificates"
 rm *.cer
+rm DigiCertAssuredIDRootCA.crt.pem
+wget https://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt.pem
 wget https://knowledge.digicert.com/content/dam/digicertknowledgebase/attachments/time-stamp/TSACertificate.cer
 wget https://knowledge.digicert.com/content/dam/digicertknowledgebase/DigiCertTrustedG4RSA4096SHA256TimeStampingCA.cer
 wget https://knowledge.digicert.com/content/dam/digicertknowledgebase/DigiCertTrustedRootG4.cer
