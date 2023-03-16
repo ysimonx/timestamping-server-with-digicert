@@ -12,7 +12,7 @@ openssl ts -query -in file.digicert.tsq -text
 sleep 5
 
 
-curl -H "Content-Type: application/timestamp-query" --data-binary '@file.digicert.tsq'  http://timestamp.digicert.com > file.digicert.tsr
+curl -H 'Content-Type: application/timestamp-query' --data-binary '@file.digicert.tsq'  http://timestamp.digicert.com > file.digicert.tsr
 echo "timestamp token is"
 openssl ts -reply -in file.digicert.tsr -text
 
@@ -40,5 +40,8 @@ echo "verifying previous response with digicert's public certificates"
 sleep 5
 echo
 
+# verification avec le fichier initial "file.txt"
+openssl ts -verify -data file.txt -in file.digicert.tsr -CAfile DigiCertAssuredIDRootCA.crt.pem -untrusted CHAIN.pem
 
+# verifiation avec le fichier de query        
 openssl ts -verify -in file.digicert.tsr -queryfile file.digicert.tsq -CAfile DigiCertAssuredIDRootCA.crt.pem -untrusted CHAIN.pem
