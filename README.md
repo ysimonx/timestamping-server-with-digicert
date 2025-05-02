@@ -34,7 +34,7 @@ Failure info: unspecified
 TST info:
 Version: 1
 Policy OID: 2.16.840.1.114412.7.1
-Hash Algorithm: sha512
+Hash Algorithm: sha256
 Message data:
     0000 - 0e 3e 75 23 4a bc 68 f4-37 8a 86 b3 f4 b3 2a 19   .>u#J.h.7.....*.
     0010 - 8b a3 01 84 5b 0c d6 e5-01 06 e8 74 34 57 00 cc   ....[......t4W..
