@@ -5,10 +5,10 @@ Based upon https://knowledge.digicert.com/generalinformation/INFO4231.html
 
 Let's generate the proof that file.txt was signed at a precised timestamp by DIGICERT
 
-generate a file.digicert.tsq file : a query, containing a SH512 of file to be sent to DIGICERT about the file.txt
+generate a file.digicert.tsq file : a query, containing a SH256 of file to be sent to DIGICERT about the file.txt
 
 ```
-openssl ts -query -data file.txt -no_nonce -sha512 -cert -out file.digicert.tsq
+openssl ts -query -data file.txt -no_nonce -SH256 -cert -out file.digicert.tsq
 
 ```
 
