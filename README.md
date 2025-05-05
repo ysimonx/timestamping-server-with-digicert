@@ -34,14 +34,12 @@ Failure info: unspecified
 TST info:
 Version: 1
 Policy OID: 2.16.840.1.114412.7.1
-Hash Algorithm: sha512
+Hash Algorithm: sha256
 Message data:
-    0000 - 0e 3e 75 23 4a bc 68 f4-37 8a 86 b3 f4 b3 2a 19   .>u#J.h.7.....*.
-    0010 - 8b a3 01 84 5b 0c d6 e5-01 06 e8 74 34 57 00 cc   ....[......t4W..
-    0020 - 66 63 a8 6c 1e a1 25 dc-5e 92 be 17 c9 8f 9a 0f   fc.l..%.^.......
-    0030 - 85 ca 9d 5f 59 5d b2 01-2f 7c c3 57 19 45 c1 23   ..._Y]../|.W.E.#
-Serial number: 0x78E46FC594EAA8246D3F0615555C8636
-Time stamp: May  5 07:49:20 2025 GMT
+    0000 - f2 ca 1b b6 c7 e9 07 d0-6d af e4 68 7e 57 9f ce   ........m..h~W..
+    0010 - 76 b3 7e 4e 93 b7 60 50-22 da 52 e6 cc c2 6f d2   v.~N..`P".R...o.
+Serial number: 0x40D1BF800F708CEC9F6828C2C856AD8F
+Time stamp: May  5 07:51:50 2025 GMT
 Accuracy: unspecified
 Ordering: no
 Nonce: unspecified
@@ -50,7 +48,7 @@ Extensions:
 
 ```
 
-TIMESTAMP is  Time stamp: May  5 07:49:20 2025 GMT
+TIMESTAMP is  Time stamp: May  5 07:51:50 2025 GMT
 
 
 
